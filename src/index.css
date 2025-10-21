@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Hanken Grotesk", system-ui;
+}
+
+@theme {
+  --color-navy-950: #303b59;
+  --color-navy-200: #cac9ff;
+  --color-navy-50: #ecf2ff;
+
+  --color-blue-800: #1125d6;
+  --color-blue-50: #f3f4fd;
+
+  --color-yellow-400: #ffb21e;
+  --color-yellow-50: #fffbf4;
+
+  --color-red-400: #ff5555;
+  --color-red-50: #fff6f6;
+
+  --color-green-500: #00bb8f;
+  --color-green-50: #f2fcf9;
+
+  --color-light-slate-blue: hsl(252, 100%, 67%);
+  --color-light-royal-blue: hsl(241, 81%, 54%);
+  --color-violet-blue: hsla(256, 72%, 46%, 1);
+  --color-persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+@layer components {
+  .text-preset-1 {
+    @apply text-7xl font-extrabold leading-none tracking-normal;
+  }
+
+  .text-preset-2 {
+    @apply text-[3.5rem] font-extrabold leading-none tracking-normal;
+  }
+
+  .text-preset-3 {
+    @apply text-[2rem] font-bold leading-[1.3] tracking-normal;
+  }
+
+  .text-preset-4 {
+    @apply text-2xl font-bold leading-[1.3] tracking-normal;
+  }
+
+  .text-preset-5-bold {
+    @apply text-lg font-bold leading-[1.3] tracking-normal;
+  }
+
+  .text-preset-5-md {
+    @apply text-lg font-medium leading-[1.3] tracking-normal;
+  }
+
+  .text-preset-6-bold {
+    @apply text-base font-bold leading-[1.3] tracking-normal;
+  }
+
+  .text-preset-6-md {
+    @apply text-base font-medium leading-[1.3] tracking-normal;
+  }
+}
